@@ -7,11 +7,13 @@ const app = express();
 
 //a rota é um caminho para acessar a sua aplicação
 app.get("/", (req, res) => {
-    res.send("Seja bem-vindo ao meu app!");
+    //res.send("Hello! Seja bem-vindo ao meu app!");
+    res.sendFile(__dirname + "/html/index.html");
 });
 
 app.get("/sobre", (req, res) => {
-    res.send("Minha página sobre");
+    //res.send("Minha página sobre");
+    res.sendFile(__dirname + "/html/sobre.html");
 });
 
 app.get("/blog", (req, res) => {
