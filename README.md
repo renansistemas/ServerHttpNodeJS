@@ -6,4 +6,5 @@ Repositório criado com o objetivo de testar HelloWorld criando um servidor HTTP
 * Rotas  
 * Parâmetros
 * Nodemon: monitora as alterações no projeto e reinicia o servidor automaticamente
+* Renderização de arquivos HTML nas rotas
 * 
