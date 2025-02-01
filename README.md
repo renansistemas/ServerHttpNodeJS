@@ -4,4 +4,6 @@ Repositório criado com o objetivo de testar HelloWorld criando um servidor HTTP
 # Temas abordados neste projeto
 * Framework Express  
 * Rotas  
-* Parâmetros  
+* Parâmetros
+* Nodemon: monitora as alterações no projeto e reinicia o servidor automaticamente
+* 
