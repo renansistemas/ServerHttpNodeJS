@@ -10,3 +10,44 @@ sequelize.authenticate().then(function() {
 }).catch(function(err) {
     console.log(err);
 });
+
+// Model de Postagem
+const Postagem = sequelize.define('postagens', {
+    titulo: {
+        type: Sequelize.STRING //STRING é o tipo de dado com limitação de caracteres
+    },
+    conteudo: {
+        type: Sequelize.TEXT //TEXT é o tipo de dado sem limitação de caracteres
+    }
+});
+
+//Postagem.sync({force: true});
+
+const Usuario = sequelize.define('usuarios', {
+    nome: {
+        type: Sequelize.STRING
+    },
+    sobrenome: {
+        type: Sequelize.STRING
+    },
+    email: {
+        type: Sequelize.STRING
+    },
+    idade: {
+        type: Sequelize.INTEGER
+    }
+});
+
+//Usuario.sync({force: true});
+
+// Postagem.create({
+//     titulo: "Aprendendo Node",
+//     conteudo: "Hoje começamos o aprendizado de Node"
+// });
+
+Usuario.create({
+    nome: "Renan",
+    sobrenome: "Freitas",
+    email: "renansistemas@hotmail.com",
+    idade: 34
+});
