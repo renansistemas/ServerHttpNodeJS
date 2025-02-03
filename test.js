@@ -45,9 +45,9 @@ const Usuario = sequelize.define('usuarios', {
 //     conteudo: "Hoje começamos o aprendizado de Node"
 // });
 
-Usuario.create({
-    nome: "Renan",
-    sobrenome: "Freitas",
-    email: "renansistemas@hotmail.com",
-    idade: 34
-});
+// Usuario.create({
+//     nome: "Renan",
+//     sobrenome: "Freitas",
+//     email: "renansistemas@hotmail.com",
+//     idade: 34
+// });
