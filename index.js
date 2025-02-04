@@ -1,6 +1,20 @@
 //variaveis transformadas em constantes
 const express = require('express');
 const app = express();
+const handleebars = require('express-handlebars');
+const Sequelize = require('sequelize');
+
+// Configuração do handlebars
+    // Template Engine
+        app.engine('handlebars', handleebars({defaultLayout: 'main'}));
+        app.set('view engine', 'handlebars');
+    // Conexão com o banco de dados MySQL
+    const sequelize = new Sequelize('test', 'root', 'Wh13juc$', {
+        host: "localhost",
+        dialect: 'mysql'
+    });
+
+
 
 //para acessar no navegador devo usar: localhost:8081
 //app.listen(8081);
