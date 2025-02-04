@@ -9,4 +9,4 @@ Repositório criado com o objetivo de testar HelloWorld criando um servidor HTTP
 * Renderização de arquivos HTML nas rotas
 * Banco de dados MySQL
 * **Sequelize:** é um ORM (Object-Relational Mapping) para Node.js, que facilita a interação com bancos de dados relacionais como MySQL, PostgreSQL, MariaDB, SQLite e Microsoft SQL Server. Ele permite que você manipule dados usando código JavaScript/TypeScript em vez de escrever queries SQL diretamente.
-* 
+* Handlebars: O express-handlebars é um mecanismo de template (view engine) para o framework Express.js que usa a sintaxe do Handlebars.js para renderizar páginas dinâmicas no lado do servidor
